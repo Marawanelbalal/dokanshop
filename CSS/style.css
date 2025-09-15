@@ -1,0 +1,275 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+footer a:hover{
+    color: indianred !important;
+    transition: 0.4s ease all;
+    cursor:pointer
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.nav-link,.carousel-caption { 
+    font-weight: 600;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.dropdown-menu li:hover{
+    background-color: indianred !important;
+    text-transform: uppercase;
+    transition: 0.5s ease all;
+}
+.dropdown-menu li a {
+    font-weight: 600 !important;
+    display: inline-block; /* Transform only works on inline-block */
+    transition: transform 0.5s ease;
+}
+
+.dropdown-menu li:hover a {
+    background-color: transparent;
+    transform: translateX(20px);
+}
+
+
+
+.carousel {
+    padding-top: 74px;
+}
+
+
+.carousel-image {
+    filter: brightness(0.4);
+}
+
+.product-image {
+    max-height: 300px;
+    width: auto;
+}
+.latest-product {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.latest-product p:last-of-type {
+    color: grey;
+    font-weight: 700;
+}
+.see-more {
+    border-color: indianred;
+    background-color: indianred;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+    transition: ease-out;
+    transition-duration: 0.2s;
+    background-color: indianred;
+    border-color: indianred;
+}
+
+.icons {
+    gap: 4.5rem;
+    font-size: x-large;
+    color: grey !important;
+}
+
+
+video {
+    width: 65%;
+}
+
+.deal {
+    max-height: 280px;
+    max-width: auto !important;
+}
+.endform {
+    width: 45%;
+}
+
+
+@media screen and (max-width:767px) {
+ .endform {
+    width: 85%;
+ }   
+}
+
+.sign-in {
+    height: 80vh;
+    padding-top: 120px;
+
+}
+
+.sign-up {
+    height: 80vh;
+    padding-top: 120px;
+}
+
+#fb-btn,#google-btn,.form-div button {
+    border-radius: 0px;
+    font-weight: 600;
+}
+
+.form-div {
+    background-color: #d1cbcb;
+}
+
+label {
+    font-weight: 600;
+}
+.about-us {
+    height: 40vh;
+    filter: brightness(0.85);
+    font-weight: 600;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../media/about-us-page-heading.jpg);
+}
+
+.products-image {
+    height: 40vh;
+    font-weight: 600;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../media/products-background.jpg);
+}
+
+.spacer {
+    height: 100px;
+}
+.products-image::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.products-text {
+    z-index: 1;
+    position: relative;
+}
+.about-us h1,.products-image h1{
+     font-size: clamp(2rem, 5vw, 4rem);
+}
+.about-us-text {
+    width: 32%;
+}
+.navbar-spacer {
+    height: 74px;
+}
+
+.service-card {
+    border-top: 0.2rem solid rgb(248, 242, 242);
+    border-left: 0.2rem solid rgb(248, 242, 242);
+    border-right: 0.2rem solid gray;
+    border-bottom: 0.2rem solid gray;
+    max-width: 350px;
+}
+
+@media screen and (min-width:1110px) {
+    .about-us {
+        background-position: unset;
+    }
+    .products-image {
+        background-position: unset;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .about-us-text {
+        width: 100% !important;
+    }
+    
+}
+
+@media screen and (min-width:567px) and  (max-width:767px) {
+    .member-img {
+        max-width: 290px;
+    }
+}
+
+.footer-icon i{
+    font-size: clamp(4rem, 4vw, 8rem);
+}
+.footer-icon p {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+.fashion-title h1 {
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+.fashion-title p {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+.product-card img{
+    max-height: 300px;
+    max-width: 300px;
+}
+.product-card {
+    max-width: 320px;
+    transition-duration: 0.7s;
+}
+.product-card h1 {
+    font-weight: 600;
+}
+.product-card p {
+    color: grey;
+    font-weight: 700;
+    font-size: clamp(0.5rem, 4vw, 1.5rem);
+}
+
+.product-card:hover {
+    color: white;
+    background-color: rgb(43, 40, 40);
+    border-color: black;
+    border-width: 3rem;
+    transform: scale(1.05);
+}
+
+.block-btn {
+    font-weight: 600;
+}
+
+.map {
+    border: 1.2rem solid rgb(53, 47, 47);
+
+}
+
+
+.contact-info h3 {
+    color: indianred;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: clamp(1.5rem,7vw,3rem);
+}
+.contact-info {
+    font-weight: 500;
+    font-size: clamp(1.2rem,5vw,1.5rem);
+}
+
+.map iframe {
+    min-width: 500px;
+}
+@media screen and (max-width:992px) {
+
+    .map iframe {
+        min-width: 0px;
+    }
+    
+}
+
