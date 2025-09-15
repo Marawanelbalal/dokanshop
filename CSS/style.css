@@ -42,15 +42,23 @@ footer a:hover{
     transform: translateX(20px);
 }
 
+
+
+.carousel {
+    padding-top: 74px;
+    max-height: 950px;
+}
+
+
 .carousel-image {
     filter: brightness(0.4);
 }
-.carousel {
-    max-height: 950px;
-}
+
 .carousel-title {
-    margin-bottom: 160px;
+    margin-bottom: 200px;
 }
+
+
 .product-image {
     max-height: 300px;
     width: auto;
