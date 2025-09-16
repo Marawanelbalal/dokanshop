@@ -111,16 +111,7 @@ video {
  }   
 }
 
-.sign-in {
-    height: 80vh;
-    padding-top: 120px;
 
-}
-
-.sign-up {
-    height: 80vh;
-    padding-top: 120px;
-}
 
 #fb-btn,#google-btn,.form-div button {
     border-radius: 0px;
